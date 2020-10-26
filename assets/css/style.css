@@ -1,23 +1,62 @@
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+
+/* UTILITY CLASS */
+
+.text_c {
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+
+/* /UTILITY CLASS */
+
+
 
 /* HEADER */
 
 header {
-  height: 600px;
+  height: 750px;
   position: relative;
-  background-image: url('../img/header/cover.jpeg');
+  background-image: url('https://www.fleetmagazine.com/wp-content/uploads/2020/05/helbiz-unlimeted-monopattini.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.navbar {
-  line-height: 70px;
-  background-color: white;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
 
 a {
   text-decoration: none;
   padding: 0 15px;
   color: black;
+}
+
+/* navbar */
+
+header ul {
+  text-align: right;
+}
+
+.navbar {
+  line-height: 70px;
+  background-color: white;
 }
 
 .navbar li {
@@ -27,7 +66,31 @@ a {
 }
 
 .menu_lang li:not(:last-child) a {
-  border-right: 1px solid white;
+  border-right: 1px solid black;
 }
+
+/* /navbar */
+
+/* hero */
+
+.hero_text{
+  color: white;
+}
+
+.hero_text h1{
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.hero_text p{
+  margin: 30px 0;
+}
+
+.hero_text img {
+  width: 10%;
+}
+
+/* /hero */
+
 
 /* /HEADER */

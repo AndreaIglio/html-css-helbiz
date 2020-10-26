@@ -1,0 +1,33 @@
+
+/* HEADER */
+
+header {
+  height: 600px;
+  position: relative;
+  background-image: url('../img/header/cover.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  line-height: 70px;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: black;
+}
+
+.navbar li {
+  font-size: 14px;
+  list-style: none;
+  display: inline-block;
+}
+
+.menu_lang li:not(:last-child) a {
+  border-right: 1px solid white;
+}
+
+/* /HEADER */

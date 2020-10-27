@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="assets/framework/12-bool.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mediaquery.css">
 
   <!-- google font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -31,7 +33,7 @@
             <div class="col-lg-1">
               <img src="assets/img/header/HelbizLogo.svg" alt="">
             </div>
-            <div class="col-lg-7 col-offset-lg-1">
+            <div class="col-lg-7 col-offset-lg-1 md_display_none sm_display_none">
               <ul>
                 <li><a href="#">HELBIZGO</a></li>
                 <li><a href="#">HELBIZBIKE</a></li>
@@ -42,11 +44,12 @@
             </div>
             <div class="col-lg-2 col-offset-lg-1 menu_lang">
               <ul>
-                <li><a href="#">ITA</a></li>
-                <li><a href="#">ENG</a></li>
-                <li><a href="#">ESP</a></li>
+                <li><a class="md_display_none sm_display_none" href="#">ITA</a></li>
+                <li><a class="md_display_none sm_display_none" href="#">ENG</a></li>
+                <li><a class="md_display_none sm_display_none" href="#">ESP</a></li>
               </ul>
             </div>
+
 
           </div>
         </div>
@@ -75,61 +78,186 @@
     <section id="models">
       <div class="container">
         <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="models_card text_c bg_lightgrey">
-            <img class= "models_logo" src="assets/img/main/models/helbizgo.svg" alt="">
-            <h3>Seamless E-Scooter sharing globally.</h3>
-            <a href="">Learn More <i class="fas fa-angle-right"></i></a>
-            <img class="models_design" src="assets/img/main/models/helbizgo.0a98bab.jpg" alt="">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="models_card text_c bg_lightgrey">
+              <img class="models_logo" src="assets/img/main/models/helbizgo.svg" alt="">
+              <h3>Seamless E-Scooter sharing globally.</h3>
+              <a href="">Learn More <i class="fas fa-angle-right"></i></a>
+              <img class="models_design" src="assets/img/main/models/helbizgo.0a98bab.jpg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="models_card text_c bg_lightgrey">
-            <img class= "models_logo" src="assets/img/main/models/Helbizbike.svg" alt="">
-            <h3>Next generation of electric city bikes.
-            </h3>
-            <a href="">Learn More <i class="fas fa-angle-right"></i></a>
-            <img class="models_design" src="assets/img/main/models/helbizbike.1cc953c.jpg" alt="">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="models_card text_c bg_lightgrey">
+              <img class="models_logo" src="assets/img/main/models/Helbizbike.svg" alt="">
+              <h3>Next generation of electric city bikes.
+              </h3>
+              <a href="">Learn More <i class="fas fa-angle-right"></i></a>
+              <img class="models_design" src="assets/img/main/models/helbizbike.1cc953c.jpg" alt="">
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
 
 
-
+    <!--
     <section id="sharing">
       <div class="container-fluid">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 p_25 text_l col-md-6">
+            <div class="col-lg-4 p_t_25 text_l col-md-12">
               <h2>How does Helbiz work?</h2>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-12">
               <img src="assets/img/main/sharing/iphone-frame.7897a89.png" alt="">
             </div>
-            <div class="col-lg-4 p_25 text_l col-md-6 col-offset-md-3">
+            <div class="col-lg-4 p_t_25 text_l col-md-12">
               <h3>Step 3</h3>
               <p>Browse vehicles near you</p>
             </div>
           </div>
         </div>
       </div>
+    </section> -->
+
+
+
+    <section id="sharing" class="">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 text_r">
+              <h2>How does Helbiz work?</h2>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4 text_c col-sm-12 col-md-12">
+              <img src="assets/img/main/sharing/iphone-frame.7897a89.png" alt="">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <h3>Step 3</h3>
+              <p>Browse vehicles near you</p>
+            </div>
+            <!-- /.col-lg-4 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.container-fluid -->
+
+
+
     </section>
 
 
     <section id="info">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">a</div>
-          <div class="col-lg-6">a</div>
-          <div class="col-lg-6">a</div>
+          <div class="scooter">
+            <div class="row">
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6 float_r text_c scooter_text">
+                <h2>Smart Mobility on two wheels</h2>
+                <p>A cleaner and more convenient
+                  alternative to get around your city.</p>
+                <a href="">Learn More <i class="fas fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 phone">
+            <h1>
+              Get the app.
+              Ride today
+            </h1>
+            <a href="">IOS <i class="fas fa-angle-right"></i></a>
+            <a href="">Android <i class="fas fa-angle-right"></i></a>
+            <img src="assets/img/main/info/download.png" alt="">
+
+          </div>
+          <div class="col-lg-6 city">
+            <h1>Find us around
+              the globe</h1>
+            <a href="">Our Cities<i class="fas fa-angle-right"></i></a>
+          </div>
+
         </div>
       </div>
     </section>
+
   </main>
   <!-- /MAIN -->
   <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 md_padd_l_20 sm_padd_l_20">
+          <h2>HELBIZ</h2>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 md_padd_l_20 sm_padd_l_20">
+          <h3 class="title">PRODUCT</h3>
+          <ul>
+            <li class="item"><a href="#">HelbizGO</a></li>
+            <li class="item"><a href="#">HelbizCAR</a></li>
+            <li class="item"><a href="#">HelbizAir</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 md_padd_l_20 sm_padd_l_20">
+          <h3 class="title">INFO</h3>
+          <ul>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="#">Company Info</a></li>
+            <li class="item"><a href="#">Cities</a></li>
+            <li class="item"><a href="#">Sustainability</a></li>
+            <li class="item"><a href="#">Franchise</a></li>
+            <li class="item"><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 md_padd_l_20 sm_padd_l_20">
+          <h3 class="title">HELBIZ</h3>
+          <ul>
+            <li class="item"><a href="#">Contact us</a></li>
+            <li class="item"><a href="#">Support</a></li>
+            <li class="item"><a href="#">Twitter Support</a></li>
+            <li class="item"><a href="#">Newsroom</a></li>
+            <li class="item"><a href="#">Media Assets</a></li>
+            <li class="item"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-offset-md-5 col-sm-6">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-youtube-square"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12">
+          <p><a href="#">Terms & Conditions</a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12">
+          <p><a href="#">Press & News</a></p>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12">
+          <p><a href="#">©2020 Helbiz</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-3 col-offset-lg-5">
+
+          <img src="assets/img/header/AppStore.svg" alt="">
+          <img src="assets/img/header/GooglePlay.svg" alt="">
+        </div>
+      </div>
+    </div>
 
   </footer>
 </body>
